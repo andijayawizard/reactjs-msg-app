@@ -1,3 +1,4 @@
+import "bootstrap/dist/css/bootstrap.min.css";
 import React from "react";
 import {
   Button,
@@ -5,9 +6,8 @@ import {
   FormControl,
   Nav,
   Navbar,
-  NavDropdown,
+  NavDropdown
 } from "react-bootstrap";
-import "bootstrap/dist/css/bootstrap.min.css";
 
 function Header(props) {
   return (
