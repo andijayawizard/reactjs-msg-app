@@ -4,6 +4,7 @@ import "./App.scss";
 import About from "./pages/About";
 import Contact from "./pages/Contact";
 import Home from "./pages/Home";
+import Products from './pages/Products'
 
 function App() {
   return (
@@ -11,6 +12,7 @@ function App() {
       <Route exact path="/" component={Home}></Route>
       <Route path="/about" component={About}></Route>
       <Route path="/contact" component={Contact}></Route>
+      <Route path="/products" component={Products}></Route>
     </Router>
   );
 }
