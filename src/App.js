@@ -10,6 +10,9 @@ import About from "./pages/About";
 import Contact from "./pages/Contact";
 import Home from "./pages/Home";
 import Products from "./pages/Products";
+import JassaShop from "./pages/JassaShop";
+import BusinessWebsites from "./pages/BusinessWebsites";
+import GraphQL from './pages/GraphQL'
 
 function App() {
   // const [theme, setTheme] = useState("light");
@@ -18,18 +21,21 @@ function App() {
   // };
   const [theme, themeToggler, mountedComponent] = useDarkMode();
   const themeMode = theme === "light" ? lightTheme : darkTheme;
-  if(!mountedComponent) return <div/>
+  if (!mountedComponent) return <div />;
   return (
     <ThemeProvider theme={themeMode}>
       <>
         <GlobalStyles />
-        <Toggle theme={theme} toggleTheme={themeToggler} />
+        {/* <Toggle theme={theme} toggleTheme={themeToggler} /> */}
         {/* <Button onClick={themeToggler}>Switch Theme</Button> */}
         <Router>
           <Route exact path="/" component={Home}></Route>
           <Route path="/about" component={About}></Route>
           <Route path="/contact" component={Contact}></Route>
           <Route path="/products" component={Products}></Route>
+          <Route path="/jassa-shop" component={JassaShop}></Route>
+          <Route path="/business-websites" component={BusinessWebsites}></Route>
+          <Route path="/graphql" component={GraphQL}></Route>
         </Router>
       </>
     </ThemeProvider>
