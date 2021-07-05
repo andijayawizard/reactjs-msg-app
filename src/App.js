@@ -7,6 +7,7 @@ import { darkTheme, lightTheme } from "./components/Themes";
 import Toggle from "./components/Toggler";
 import { useDarkMode } from "./components/useDarkMode";
 import About from "./pages/About";
+import Customers from "./pages/Customers";
 import Contact from "./pages/Contact";
 import Home from "./pages/Home";
 import Products from "./pages/Products";
@@ -31,6 +32,7 @@ function App() {
         <Router>
           <Route exact path="/" component={Home}></Route>
           <Route path="/about" component={About}></Route>
+          <Route path="/customers" component={Customers}></Route>
           <Route path="/contact" component={Contact}></Route>
           <Route path="/products" component={Products}></Route>
           <Route path="/jassa-shop" component={JassaShop}></Route>

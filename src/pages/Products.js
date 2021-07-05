@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import Header from "../parts/Header";
+import Footer from "../parts/Footer";
 import axios from "axios";
 import ReactPaginate from "react-paginate";
 
@@ -74,6 +75,7 @@ class Products extends Component {
             activeLinkClassName={"active"}
           />
         </div>
+        <Footer />
       </>
     );
   }
